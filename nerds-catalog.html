@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+<!--Хэдер-->
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+        <img src="img/index-logo.svg" alt="Логотип Нердс Шапка">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li class="checked-catalog"><a href="nerds-catalog.psd">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Магазин веб-студии Нердс</h1>
+      <section>
+        <h2 class="catalog">Магазин готовых шаблонов</h2>
+      </section>
+<!--Форма фильтров-->
+      <form class="catalog-filters">
+<!--Фильтры
+
+        price
+        type
+        special
+        -->
+<!--Сортировка-->
+      </form>
+      <ul class="sort-by">Сортировать:
+        <li><a onclick="sort-by-price()" checked>По цене</a></li>
+        <li><a onclick="sort-by-type()">По типу</a></li>
+        <li><a onclick="sort-by-name()">По названию</a></li>
+      </ul>
+<!--Превью шаблонов-->
+      <section class="template-preview">
+        <div id="tmpl-1"><img src="template-1.svg" alt="Седона"></div>
+        <div id="tmpl-2"><img src="teamplate-2.svg" alt="Седона"></div>
+        <div id="tmpl-3"><img src="teamplate-3.svg" alt="Седона"></div>
+        <div id="tmpl-4"><img src="template-4.svg" alt="Седона"></div>
+        <div id="tmpl-5"><img src="template-5.svg" alt="Седона"></div>
+        <div id="tmpl-6"><img src="teamplate-2.svg" alt="Седона"></div>
+      </section>
+
+<!--Листание шаблонов-->
+      <div class="page-number">
+        <button class="page-1" type="submit">1</button>
+        <button class="page-2" type="submit">1</button>
+        <button class="page-3" type="submit">1</button>
+        <button class="page-next" type="submit">1</button>
+      </div>
+<!--Футер-->
+      <footer class="main-footer">
+        <div class="map image">
+          <img src="img/map.svg" alt="Карта расположения компании">
+        <section class="contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts-title">Nёrds Design Studio</p>
+          <p class="contacts-info">191186, Санкт-Петербург,<br />ул. Б. Конюшенная, д.19/8 </p>
+          <p class="contacts-info">тел. +7 (812) 275-75-75</p>
+          <button class="write-us" type="submit">Напишите нам</button>
+        </div>
+        </section>
+        <section class="social-media">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <a href="https://vk.ru"><button class="vkontakte"></button></a>
+          <a href="https://facebook.com"><button class="facebook"></button></a>
+          <a href="https://instagram.com"><button class="instagram"></button></a>
+          <p class="social-media-offer-title">Давайте дружить, это выгодно!</p>
+          <p class="social-media-offer">Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </footer>
+
+  </body>
+</html>
