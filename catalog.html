@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+<!--Хэдер-->
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo">
+    <img src="img/index-logo.svg" alt="Логотип Нердс Шапка">
+    </a>
+    <ul class="site-navigation">
+      <li><a href="studio.html">Студия</a></li>
+      <li><a href="clients.html">Клиенты</a></li>
+      <li><a href="catalog.html">Магазин</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="cart.html">Корзина</a></li>
+    </ul>
+  </nav>
+</header>
+    <main class="container">
+      <h1 class="catalog-page">Магазин готовых шаблонов</h1>
+      <div class="caalog-wrapper">
+<!--Форма фильтров выбора шаблонов-->
+        <aside class="catalog-filter">
+          <form action="" method="post">
+            <fieldset class="price">
+    <!--Стоимость-->
+              <legend>Стоимость</legend>]
+              <!--Вставаить слайдер выбора цены-->
+            </fieldset>
+    <!--Сетка-->
+            <fieldset class="Net">
+              <legend>Сетка</legend>
+                <input type="radio" name="radio-button" id="adaptive" value="adaptive" checked/>
+                <label for="adaptive">Адаптивная</label>
+                <input type="radio" name="radio-button" id="fixed" value="fixed"/>
+                <label for="fixed">ЭФиксированная</label>
+                <input type="radio" name="radio-button" id="rubber" value="rubber"/>
+                <label for="rubber">Резиновая</label>
+            </fieldset>
+    <!--Особенности-->
+            <fieldset class="Specialties">
+              <legend>Особенности</legend>
+                <input type="checkbox" name="slider" id="slider" checked/>
+                <label for="slider">Слайдер</label>
+                <input type="checkbox" name="advantages" id="advantages"/>
+                <label for="advantages">Блок преимуществ</label>
+                <input type="checkbox" name="news" id="news" checked/>
+                <label for="news">Новости</label>
+                <input type="checkbox" name="gallery" id="gallery"/>
+                <label for="gallery">Галерея</label>
+                <input type="checkbox" name="cart" id="cart">
+                <label for="cart">Корзина</label>
+            </fieldset>
+    <!--Показать-->
+            <input type="submit" name="apply-filters" value="show"/>
+            <label for="aplly-filters">Показать</label>
+          </form>
+        </aside>
+<!--Конец формы фильтров выбора шаблонов-->
+
+<!--Шаблоны-->
+        <div class="catalog">
+    <!--Сортировка-->
+            <div class="catalog-sort-by">
+              <span>Сортировать:</span>
+              <a href="#">По цене</a>
+              <a href="#">По типу</a>
+              <a href="#">По названию</a>
+                <div class="sort-arrows">
+                  <a href="#" class="arrow-down">По убыванию</a>
+                  <a href="#" class="arrow-up">По возрастанию</a>
+                </div>
+            </div>
+    <!--Список шаблонов-->
+            <div class="catalog-list">
+              <div class="catalog-item-sedona">
+                <img src="#" alt="Превью Седоны" />
+                <div class="hidden-info"
+                    <h3>Sedona</h3>
+                    <p>Информационный сайт для туристов</p>
+                    <button type="button">9000 РУБ.</button>
+                </div>
+                </div>
+
+                <div class="catalog-item-pink">
+                  <img src="#" alt="Превью Пинк" />
+                  <div class="hidden-info"
+                      <h3>Pink</h3>
+                      <p>Стекла для смартфона</p>
+                      <button type="button">9000 РУБ.</button>
+                </div>
+                </div>
+
+                <div class="catalog-item-borodinski">
+                    <img src="#" alt="Превью Бородински" />
+                    <div class="hidden-info"
+                        <h3>Borodinski</h3>
+                        <p>Барбершоп</p>
+                        <button type="button">5000 РУБ.</button>
+                  </div>
+                  </div>
+
+                  <div class="catalog-item-monki">
+                      <img src="#" alt="Превью Монки" />
+                      <div class="hidden-info"
+                          <h3>Monki</h3>
+                          <p>Штучки ручной работы</p>
+                          <button type="button">7000 РУБ.</button>
+                  </div>
+                  </div>
+
+                  <div class="catalog-item-A+">
+                      <img src="#" alt="Превью А+" />
+                      <div class="hidden-info"
+                          <h3>А+</h3>
+                          <p>Учеба</p>
+                          <button type="button">4000 РУБ.</button>
+                  </div>
+                  </div>
+
+                  <div class="catalog-item-kvast">
+                      <img src="#" alt="Превью Кваст" />
+                      <div class="hidden-info"
+                          <h3>Кваст</h3>
+                          <p>Крфатовый квас</p>
+                          <button type="button">3000 РУБ.</button>
+                  </div>
+                  </div>
+    <!--Страница каталога-->
+              <div class="paginator">
+                <a href="#" class="page-active">1</a>
+                <a href="#" class="page-active">2</a>
+                <a href="#" class="page-active">3</a>
+                <a href="#" class="page-active">Следующая</a>
+              </div>
+            </div>
+        </div>
+   </main>
+   <!--Футер-->
+         <footer class="main-footer">
+           <aside class="map image">
+               <img src="img/map.svg" alt="Карта расположения компании">
+             <section class="contacts">
+               <h2 class="visually-hidden">Контакты</h2>
+               <p class="contacts-title">Nёrds Design Studio</p>
+               <p class="contacts-info">191186, Санкт-Петербург,<br />ул. Б. Конюшенная, д.19/8 </p>
+               <p class="contacts-info">тел. +7 (812) 275-75-75</p>
+               <a href="contact-form.html">Напишите нам</a>
+             </section>
+           </aside>
+           <div class="social-buttons">
+             <h2 class="visually-hidden">Социальные сети</h2>
+             <a href="https://vk.ru" class="social-btn vkontakte"></a>
+             <a href="https://facebook.com" class="social-btn facebook"></a>
+             <a href="https://instagram.com" class="social-btn instagram"></a>
+           </div>
+           <div class="social-friends">
+             <p class="social-media-offer-title">Давайте дружить, это выгодно!</p>
+             <p class="social-media-offer">Скидка 10% для друзей из социальных сетей.</p>
+           </div>
+         </footer>
+  </body>
+</html>
