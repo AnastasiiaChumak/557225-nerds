@@ -8,8 +8,8 @@
 <!--Хэдер-->
 <header class="main-header">
   <nav class="main-navigation">
-    <a class="main-header-logo" href="index.html">
-    <img src="img/nerds-logo.svg" alt="логотип нердс шапка">
+    <a href="index.html" class="main-header-logo" aria-label="Логотип вебстудии Нердс">
+    <img src="img/nerds-logo.svg" alt="Логотип вебстудии Нердс">
     </a>
     <ul class="site-navigation">
       <li><a href="studio.html">Студия</a></li>
@@ -25,10 +25,19 @@
       <div class="catalog-wrapper">
 <!--Форма фильтров выбора шаблонов-->
         <aside class="catalog-filter">
-          <form action="cовсем нет никаких данных :(" method="post">
+          <form action="cовсем нет никаких данных :(" method="post" oninput="priceminval.value=pricemin.value">
             <fieldset class="price">
     <!--Стоимость-->
-              <legend>Стоимость</legend>
+            <legend>Стоимость</legend>
+            <div class="price-min">
+            <label for="pricemin"></label>
+              <input type="range" multiple id="pricemin" name="pricemin" min="0" max="20000" step="1" value="15000">
+            </div>
+            <div class="price-min" output-area>
+              <label for="priceminval">От</label>
+              <output name="priceminval" id="priceminval">15000</output>
+            </div>
+
               <!--Вставаить слайдер выбора цены-->
             </fieldset>
     <!--Сетка-->
@@ -37,7 +46,7 @@
                 <input type="radio" name="radio-button" id="adaptive" value="adaptive" checked/>
                 <label for="adaptive">Адаптивная</label>
                 <input type="radio" name="radio-button" id="fixed" value="fixed"/>
-                <label for="fixed">ЭФиксированная</label>
+                <label for="fixed">Фиксированная</label>
                 <input type="radio" name="radio-button" id="rubber" value="rubber"/>
                 <label for="rubber">Резиновая</label>
             </fieldset>
@@ -56,7 +65,8 @@
                 <label for="cart">Корзина</label>
             </fieldset>
     <!--Показать-->
-            <input type="submit" name="apply-filters" value="Показать"/>
+            <input type="submit" name="apply-filters" id="show" value="Показать"/>
+            <label for="show" class="visually-hidden">Показать макеты с учетом фильтров</label>
           </form>
         </aside>
 <!--Конец формы фильтров выбора шаблонов-->
@@ -66,18 +76,18 @@
     <!--Сортировка-->
             <div class="catalog-sort-by">
               <span>Сортировать:</span>
-              <a href="#">По цене</a>
-              <a href="#">По типу</a>
-              <a href="#">По названию</a>
+              <a href="#" aria-label="Сортировать макеты по цене">По цене</a>
+              <a href="#" aria-label="Сортировать макеты по типу">По типу</a>
+              <a href="#" aria-label="Сортировать макеты по названию">По названию</a>
                 <div class="sort-arrows">
-                  <a href="#" class="arrow-down">По убыванию</a>
-                  <a href="#" class="arrow-up">По возрастанию</a>
+                  <a href="#" class="arrow-down" aria-label="Сортировать макеты по убыванию цены">По убыванию</a>
+                  <a href="#" class="arrow-up" aria-label="Сортировать макеты по возрастанию цены">По возрастанию</a>
                 </div>
             </div>
     <!--Список шаблонов-->
             <div class="catalog-list">
               <div class="catalog-item sedona">
-                <img src="img/img-sedona.jpg" alt="Превью Седоны" />
+                <img src="img/img-sedona.jpg" alt="Превью макета Седона" />
                 <div class="hidden-info"
                     <h3>Sedona</h3>
                     <p>Информационный сайт для туристов</p>
@@ -86,7 +96,7 @@
                 </div>
 
                 <div class="catalog-item pink">
-                  <img src="img/img-pink.jpg" alt="Превью Пинк" />
+                  <img src="img/img-pink.jpg" alt="Превью макета Пинк" />
                   <div class="hidden-info"
                       <h3>Pink</h3>
                       <p>Стекла для смартфона</p>
@@ -95,7 +105,7 @@
                 </div>
 
                 <div class="catalog-item borodinski">
-                    <img src="img/img-barbershop.jpg" alt="Превью Бородински" />
+                    <img src="img/img-barbershop.jpg" alt="Превью макета Барбершоп" />
                     <div class="hidden-info"
                         <h3>Borodinski</h3>
                         <p>Барбершоп</p>
@@ -104,7 +114,7 @@
                   </div>
 
                   <div class="catalog-item monki">
-                      <img src="img/img-mishka.jpg" alt="Превью Мишка" />
+                      <img src="img/img-mishka.jpg" alt="Превью макета Мишка" />
                       <div class="hidden-info"
                           <h3>Monki</h3>
                           <p>Штучки ручной работы</p>
@@ -113,7 +123,7 @@
                   </div>
 
                   <div class="catalog-item aplus">
-                      <img src="img/img-aplus.jpg" alt="Превью А+" />
+                      <img src="img/img-aplus.jpg" alt="Превью макета А+" />
                       <div class="hidden-info"
                           <h3>А+</h3>
                           <p>Учеба</p>
@@ -122,19 +132,19 @@
                   </div>
 
                   <div class="catalog-item kvast">
-                      <img src="img/img-kvast.jpg" alt="Превью Кваст" />
+                      <img src="img/img-kvast.jpg" alt="Превью макета Кваст" />
                       <div class="hidden-info"
                           <h3>Кваст</h3>
-                          <p>Крфатовый квас</p>
+                          <p>Крафтовый квас</p>
                           <button type="button">3000 РУБ.</button>
                   </div>
                   </div>
     <!--Страница каталога-->
               <div class="paginator">
-                <a href="#" class="page-active">1</a>
-                <a href="#" class="page-active">2</a>
-                <a href="#" class="page-active">3</a>
-                <a href="#" class="next">Следующая</a>
+                <a href="#" class="page-active" aria-label="Первая страница с макетами">1</a>
+                <a href="#" class="page-active" aria-label="Вторая страница с макетами">2</a>
+                <a href="#" class="page-active" aria-label="Третья страница с макетами">3</a>
+                <a href="#" class="next" aria-label="Следующая страница с макетами">Следующая</a>
               </div>
             </div>
         </div>
@@ -142,8 +152,8 @@
    <!--Футер-->
    <footer class="main-footer">
      <aside class="map image">
-         <img src="img/map.png" alt="карта расположения компании">
-         <img src="img/map-marker.png" alt="булавка на карте">
+        <img src="img/map.png" alt="Район расположения офиса Нердс на карте">
+        <img src="img/map-marker.png" alt="Расположение офиса Нердс на карте">
        <section class="contacts">
          <h2 class="visually-hidden">Контакты</h2>
          <p class="contacts-title">Nёrds Design Studio</p>
@@ -154,9 +164,9 @@
      </aside>
      <div class="social-buttons">
        <h2 class="visually-hidden">Социальные сети</h2>
-       <a href="https://vk.ru" class="social-btn vkontakte"></a>
-       <a href="https://facebook.com" class="social-btn facebook"></a>
-       <a href="https://instagram.com" class="social-btn instagram"></a>
+       <a href="https://vk.ru" class="social-btn vkontakte" aria-label="Вконтакте"></a>
+       <a href="https://facebook.com" class="social-btn facebook" aria-label="Фейсбук"></a>
+       <a href="https://instagram.com" class="social-btn instagram" aria-label="Инстаграм"></a>
      </div>
      <div class="social-friends">
        <p class="social-media-offer-title">Давайте дружить, это выгодно!</p>
