@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
   </head>
   <body>
 <!--Хэдер-->
@@ -28,7 +31,7 @@
           <form action="cовсем нет никаких данных :(" method="post" oninput="priceminval.value=pricemin.value">
             <fieldset class="price">
     <!--Стоимость-->
-            <legend>Стоимость</legend>
+            <legend>Стоимость:</legend>
             <div class="price-min">
             <label for="pricemin"></label>
               <input type="range" multiple id="pricemin" name="pricemin" min="0" max="20000" step="1" value="15000">
@@ -42,7 +45,7 @@
             </fieldset>
     <!--Сетка-->
             <fieldset class="net">
-              <legend>Сетка</legend>
+              <legend>Сетка:</legend>
                 <input type="radio" name="radio-button" id="adaptive" value="adaptive" checked/>
                 <label for="adaptive">Адаптивная</label>
                 <input type="radio" name="radio-button" id="fixed" value="fixed"/>
@@ -52,7 +55,7 @@
             </fieldset>
     <!--Особенности-->
             <fieldset class="specialties">
-              <legend>Особенности</legend>
+              <legend>Особенности:</legend>
                 <input type="checkbox" name="slider" id="slider" checked/>
                 <label for="slider">Слайдер</label>
                 <input type="checkbox" name="advantages" id="advantages"/>
@@ -65,8 +68,10 @@
                 <label for="cart">Корзина</label>
             </fieldset>
     <!--Показать-->
-            <input type="submit" name="apply-filters" id="show" value="Показать"/>
+            <div class="show-button">
+            <input type="submit" name="apply-filters" id="show" value="Показать"/Показать
             <label for="show" class="visually-hidden">Показать макеты с учетом фильтров</label>
+            </div>
           </form>
         </aside>
 <!--Конец формы фильтров выбора шаблонов-->
@@ -91,7 +96,7 @@
                 <div class="hidden-info"
                     <h3>Sedona</h3>
                     <p>Информационный сайт для туристов</p>
-                    <button type="button">9000 РУБ.</button>
+                    <button type="button">9900 РУБ.</button>
                 </div>
                 </div>
 
@@ -99,35 +104,35 @@
                   <img src="img/img-pink.jpg" alt="Превью макета Пинк" />
                   <div class="hidden-info"
                       <h3>Pink</h3>
-                      <p>Стекла для смартфона</p>
-                      <button type="button">9000 РУБ.</button>
+                      <p>Продуктовый лендинг приложения для iOS и Android</p>
+                      <button type="button">9900 РУБ.</button>
                 </div>
                 </div>
 
                 <div class="catalog-item borodinski">
                     <img src="img/img-barbershop.jpg" alt="Превью макета Барбершоп" />
                     <div class="hidden-info"
-                        <h3>Borodinski</h3>
-                        <p>Барбершоп</p>
-                        <button type="button">5000 РУБ.</button>
+                        <h3>Barbershop</h3>
+                        <p>Сайт салоны красоты. Для мужчин, да.</p>
+                        <button type="button">9900 РУБ.</button>
                   </div>
                   </div>
 
                   <div class="catalog-item monki">
                       <img src="img/img-mishka.jpg" alt="Превью макета Мишка" />
                       <div class="hidden-info"
-                          <h3>Monki</h3>
-                          <p>Штучки ручной работы</p>
-                          <button type="button">7000 РУБ.</button>
+                          <h3>Mishka</h3>
+                          <p>Интернет-магазин вязаных игрушек</p>
+                          <button type="button">9900 РУБ.</button>
                   </div>
                   </div>
 
                   <div class="catalog-item aplus">
                       <img src="img/img-aplus.jpg" alt="Превью макета А+" />
                       <div class="hidden-info"
-                          <h3>А+</h3>
-                          <p>Учеба</p>
-                          <button type="button">4000 РУБ.</button>
+                          <h3>А Plus</h3>
+                          <p>Лендинг курсов повышения квалификации</p>
+                          <button type="button">9900 РУБ.</button>
                   </div>
                   </div>
 
@@ -135,8 +140,8 @@
                       <img src="img/img-kvast.jpg" alt="Превью макета Кваст" />
                       <div class="hidden-info"
                           <h3>Кваст</h3>
-                          <p>Крафтовый квас</p>
-                          <button type="button">3000 РУБ.</button>
+                          <p>Промо-сайт производителя крафтового класса</p>
+                          <button type="button">9900 РУБ.</button>
                   </div>
                   </div>
     <!--Страница каталога-->
