@@ -113,6 +113,7 @@ a{
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  border-style: none;
 }
 .order-website:hover{
   background-color: #e74246;
@@ -207,6 +208,62 @@ a{
 .show-button:active{
   color: #dfdfdf;
   opacity: 30%;
+}
+.catalog-sort-by{
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+.catalog-sort-by a{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 30%;
+}
+.catalog-sort-by a:hover{
+  color: #000000;
+  opacity: 60%;
+}
+.catalog-sort-by a:focus,
+.catalog-sort-by a:active{
+  color: #000000;
+  opacity: 100%;
+}
+.catalog-item{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+.catalog-item p{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: none;
+  color: #666666;
+}
+.catalog-item button{
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border-style: none;
+}
+.catalog-item button:hover{
+  background-color: #e74246;
+}
+.catalog-item button:focus{
+  background-color: #d7373b;
+}
+
 }
 
 /*Футер*/
