@@ -43,7 +43,7 @@ a{
 }
 .site-navigation a:focus{
   color: #fb565a;
-  opacity: 30%;
+  opacity: 0.3;
 }
 .site-navigation a:active{
   text-decoration: underline;
@@ -77,7 +77,7 @@ a{
 
 .slider-slides a:focus{
   background-color: #d7373b;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 /*Услуги*/
@@ -120,7 +120,7 @@ a{
 }
 .order-website:focus{
   background-color: #d7373b;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .order-app:hover{
@@ -128,7 +128,7 @@ a{
 }
 .order-app:focus{
   background-color: #00aa62;
-  opacity: 30%;
+  opacity: 0.3;
 }
 .order-presentation:hover{
   background-color: #eab534;
@@ -172,7 +172,7 @@ a{
 }
 /*Логотипы*/
 .brands{
-  opacity:20%;
+  opacity: 0.2;
 }
 
 /*КАТАЛОГ*/
@@ -207,7 +207,7 @@ a{
 }
 .show-button:active{
   color: #dfdfdf;
-  opacity: 30%;
+  opacity: 0.3;
 }
 .catalog-sort-by{
   font-size: 18px;
@@ -222,16 +222,16 @@ a{
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
-  opacity: 30%;
+  opacity: 0.3;
 }
 .catalog-sort-by a:hover{
   color: #000000;
-  opacity: 60%;
+  opacity: 0.6;
 }
 .catalog-sort-by a:focus,
 .catalog-sort-by a:active{
   color: #000000;
-  opacity: 100%;
+  opacity: 1;
 }
 .catalog-item{
   font-size: 18px;
