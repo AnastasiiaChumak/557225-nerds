@@ -40,7 +40,6 @@ a{
   padding: 0;
   display: flex;
 }
-
 .site-navigation-item{
   width: 440px;
   flex-direction: row;
