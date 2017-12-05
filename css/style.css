@@ -29,10 +29,28 @@ a{
 
   background-color: #eeeeee;
 }
+.main-header-logo{
+  padding: 50px 170px;
+}
 
 .site-navigation{
   list-style: none;
+  width: 800px;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
+
+.site-navigation-item{
+  width: 440px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.site-navigation-item-1{
+  align-items: right;
+}
+
 .site-navigation a{
   color: #000000;
 }
@@ -48,6 +66,7 @@ a{
 .site-navigation a:active{
   text-decoration: underline;
 }
+
 /*Слайдер*/
 
 .slider-slides{
@@ -81,20 +100,30 @@ a{
 }
 
 /*Услуги*/
-.services{
+
+.services-list{
+  margin: 80px 90px;
   list-style: none;
+  display: flex;
 }
 
 .service-item{
+  padding: 0 50px;
   text-align: left;
 }
 
 .service-item h3 {
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
 }
+
+.service-item p {
+  margin: 0 0 40px 0;
+}
+
 .order-website{
   background-color:#fb565a;
 }
@@ -108,12 +137,14 @@ a{
 .order-website,
 .order-app,
 .order-presentation{
+  font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   border-style: none;
+  padding: 20px 40px;
 }
 .order-website:hover{
   background-color: #e74246;
@@ -137,39 +168,91 @@ a{
   background-color: #e5a722;
 }
 /*Коротко о студии */
+.studio-about{
+  margin: 80px 90px;
+  display: flex;
+}
+
 .studio-principles{
   text-align: left;
+  margin: 80px 75px 80px 80px;
 }
-.studio-principles b{
+.studio-principles h3{
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: #000000;
 }
-.studio-services{
+
+.studio-principles p{
+  margin: 40px 0;
+}
+.studio-principles .studio-services-label {
   text-transform: uppercase;
   font-weight: 700;
   color: #000000;
 }
+.studio-services {
+  list-style-type: none;
+  padding: 0;
+}
+
 .studio-services li{
   text-transform: none;
   font-weight: 400;
+  margin: 35px 0;
 }
+.studio-services li::before {
+  content: "";
+  width: 25px;
+  position: relative;
+  top: -0.3em;
+  margin-right: 7px;
+  display: inline-block;
+  border-top: 2px solid #fb565a;
+}
+
 .studio-facts{
   text-transform: uppercase;
   font-weight: 700;
   color: #000000;
+  margin: 40px 80px 80px 75px;
 }
-.studio-facts b{
+
+.studio-facts-list{
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.fact-item b{
   font-size: 45px;
   font-weight: 700;
   color: #000000;
+  margin: 30px 0 30px 0;
 }
 .studio-facts li{
   text-transform: none;
   font-weight: 400;
   list-style: none;
 }
+
+.studio-facts p{
+  margin: 40px 0 30px 0;
+  text-align: center;
+}
+
+.fact-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.fact-item sup {
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.
 /*Логотипы*/
 .brands{
   opacity: 0.2;
