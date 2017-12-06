@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
   </head>
   <body>
+  <div class="container">
 <!--Хэдер-->
 <header class="main-header">
   <nav class="main-navigation">
@@ -23,28 +24,31 @@
     </ul>
   </nav>
 </header>
-    <main class="container">
+    <main>
       <h1 class="catalog-page">Магазин готовых шаблонов</h1>
       <div class="catalog-wrapper">
 <!--Форма фильтров выбора шаблонов-->
         <aside class="catalog-filter">
-          <form action="cовсем нет никаких данных :(" method="post" oninput="priceminval.value=pricemin.value">
-            <fieldset class="price">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filter-item price">
     <!--Стоимость-->
             <legend>Стоимость:</legend>
-            <div class="price-min">
-            <label for="pricemin"></label>
-              <input type="range" multiple id="pricemin" name="pricemin" min="0" max="20000" step="1" value="15000">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+              </div>
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
             </div>
-            <div class="price-min" output-area>
-              <label for="priceminval">От</label>
-              <output name="priceminval" id="priceminval">15000</output>
             </div>
-
-              <!--Вставаить слайдер выбора цены-->
             </fieldset>
     <!--Сетка-->
-            <fieldset class="net">
+            <fieldset class="filter-item net">
               <legend>Сетка:</legend>
                 <input type="radio" name="radio-button" id="adaptive" value="adaptive" checked/>
                 <label for="adaptive">Адаптивная</label>
@@ -54,7 +58,7 @@
                 <label for="rubber">Резиновая</label>
             </fieldset>
     <!--Особенности-->
-            <fieldset class="specialties">
+            <fieldset class="filter-item specialties">
               <legend>Особенности:</legend>
                 <input type="checkbox" name="slider" id="slider" checked/>
                 <label for="slider">Слайдер</label>
@@ -178,5 +182,6 @@
        <p class="social-media-offer">Скидка 10% для друзей из социальных сетей.</p>
      </div>
    </footer>
+   </div>
   </body>
 </html>
