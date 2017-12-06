@@ -8,143 +8,231 @@
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
   </head>
   <body>
-  <div class="container">
-<!--Хэдер-->
+    <!--Хэдер-->
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo" aria-label="Логотип вебстудии Нердс">
-        <img src="img/nerds-logo.svg" alt="Логотип вебстудии Нердс">
-        </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="studio.html">Студия</a></li>
-          <li class="site-navigation-item"><a href="clients.html">Клиенты</a></li>
-          <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
-          <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
-          <li class="site-navigation-item-1"><a href="cart.html">Корзина</a></li>
-        </ul>
+        <div class="grid">
+          <div class="row">
+            <!-- Лого -->
+            <div class="column column-2">
+              <a href="index.html" class="main-header-logo" aria-label="Логотип вебстудии Нердс">
+                <img src="img/nerds-logo.svg" alt="Логотип вебстудии Нердс">
+              </a>
+            </div>
+
+            <!-- Навигация -->
+            <div class="column column-8">
+              <ul class="site-navigation">
+                <li class="site-navigation-item"><a href="studio.html">Студия</a></li>
+                <li class="site-navigation-item"><a href="clients.html">Клиенты</a></li>
+                <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
+                <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+
+            <div class="column column-2">
+              <ul class="site-navigation site-navigation-right">
+                <li class="site-navigation-item"><a href="cart.html">Корзина</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
+
     <main>
       <h1 class="visually-hidden">Веб-студия Нердс</h1>
-<!--Слайдер-->
-    <section class="slider">
-      <div class="container">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-      <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-      <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-      <div class="slider-controls">
-        <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
-        <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
-        <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
-      </div>
-      <ul class="slider-list">
-        <li class="slider-item">
-          <h3>Долго, дорого,<br> скрупулезно.</h3>
-          <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-          <a class="slider-item-button button" href="#">Узнать больше</a>
-        </li>
-        <li class="slider-item">
-          <h3>Любим математику как никто другой</h3>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a class="slider-item-button button" href="#">Узнать больше</a>
-        </li>
-        <li class="slider-item">
-          <h3>Только ночь,<br> только хардкор</h3>
-          <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-          <a class="slider-item-button button" href="#">Узнать больше</a>
-        </li>
-      </ul>
-      </div>
-      </section>
-<!--Услуги-->
-      <section class="services">
-        <h2 class="visually-hidden">Услуги</h2>
-        <ul class="services-list">
-          <li class="service-item">
-            <img src="img/illustration-computer.png" />
-            <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-            <button class="order-website" type="submit" aria-label="Заказать вебсайт">Заказать</button>
+
+      <!--Слайдер-->
+      <section class="slider">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <div class="grid">
+              <div class="row">
+                <div class="column column-4">
+                  <div class="slider-article">
+                    <h3>Долго, дорого,<br> скрупулезно.</h3>
+                    <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                    <a class="slider-item-button button" href="#">Узнать больше</a>
+                  </div>
+                </div>
+                <div class="column column-8">
+                  <img src="img/slider-phones.png" class="slider-image" alt="Только ночь, только хардкор">
+                </div>
+              </div>
+            </div>
           </li>
-          <li class="service-item">
-            <img src="img/illustration-phones.png" />
-            <h3>Приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <button class="order-app" type="submit" aria-label="Заказать приложение">Заказать</button>
+          <li class="slider-item">
+            <div class="grid">
+              <div class="row">
+                <div class="column column-4">
+                  <div class="slider-article">
+                    <h3>Любим математику как никто другой</h3>
+                    <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                    <a class="slider-item-button button" href="#">Узнать больше</a>
+                  </div>
+                </div>
+                <div class="column column-8">
+                  <img src="img/slider-pc.png" class="slider-image" alt="Только ночь, только хардкор">
+                </div>
+              </div>
+            </div>
           </li>
-          <li class="service-item">
-            <img src="img/illustration-presentation.png" />
-            <h3>Презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <button class="order-presentation" type="submit" aria-label="Заказать презентацию">Заказать</button>
+          <li class="slider-item">
+            <div class="grid">
+              <div class="row">
+                <div class="column column-4">
+                  <div class="slider-article">
+                    <h3>Только ночь,<br> только хардкор</h3>
+                    <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                    <a class="slider-item-button button" href="#">Узнать больше</a>
+                  </div>
+                </div>
+                <div class="column column-8">
+                  <img src="img/slider-tablet.png" class="slider-image" alt="Только ночь, только хардкор">
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
-<!--Коротко о студии-->
+
+      <!--Услуги-->
+      <section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
+        <div class="grid">
+          <ul class="services-list row">
+            <li class="service-item column column-4">
+              <img src="img/illustration-computer.png" />
+              <h3>Веб-сайты</h3>
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+              <button class="order-website" type="submit" aria-label="Заказать вебсайт">Заказать</button>
+            </li>
+            <li class="service-item column column-4">
+              <img src="img/illustration-phones.png" />
+              <h3>Приложения</h3>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <button class="order-app" type="submit" aria-label="Заказать приложение">Заказать</button>
+            </li>
+            <li class="service-item column column-4">
+              <img src="img/illustration-presentation.png" />
+              <h3>Презентации</h3>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <button class="order-presentation" type="submit" aria-label="Заказать презентацию">Заказать</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Коротко о студии -->
       <section class="studio-about">
         <h2 class="visually-hidden">Коротко о студии</h2>
-        <div class="studio-principles">
-          <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
-          <p>Исповедуем принципы минимализма чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <p class="studio-services-label">Выполняем заказы на разработку:</p>
-          <ul class="studio-services">
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений на iOs и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
-        </div>
-        <div class="studio-facts">
-          <img src="img/nerds-colorful.png" alt="Цветной логотип компании Нердс">
-          <p>
-          C 2014 года любим точность во всем:
-          </p>
-          <ul class="studio-facts-list">
-            <li class="fact-item">
-              <b>146<sup>%</sup></b><span>Уровень самоотдачи</span>
-            </li>
-            <li class="fact-item">
-              <b>100<sup>%</sup></b><span>Соблюдение сроков</span>
-            </li>
-            <li class="fact-item">
-              <b>50<sup>%</sup></b><span>Минимальная предоплата</span>
-            </li>
-          </ul>
+        <div class="grid">
+          <div class="row">
+            <div class="column column-8">
+              <div class="studio-principles">
+                <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+                <p>Исповедуем принципы минимализма чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                <p class="studio-services-label">Выполняем заказы на разработку:</p>
+                <ul class="studio-services">
+                  <li>Веб-сайтов любой сложности</li>
+                  <li>Мобильных приложений на iOs и Android</li>
+                  <li>Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+              </div>
+            </div>
+            <div class="column column-4">
+              <div class="studio-facts">
+                <img src="img/nerds-colorful.png" alt="Цветной логотип компании Нердс">
+                <p>
+                C 2014 года любим точность во всем:
+                </p>
+                <ul class="studio-facts-list">
+                  <li class="fact-item">
+                    <b>146<sup>%</sup></b><span>Уровень самоотдачи</span>
+                  </li>
+                  <li class="fact-item">
+                    <b>100<sup>%</sup></b><span>Соблюдение сроков</span>
+                  </li>
+                  <li class="fact-item">
+                    <b>50<sup>%</sup></b><span>Минимальная предоплата</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-<!--Логотипы-->
-      <section class="brands">
-        <h2 class="visually-hidden">Бренды</h2>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-academy.png" alt="Логотип html академия"></a>
-        <a href=#><img src="img/logo-borodinski.png" alt="Логотип барбершопа"></a>
-        <a href=#><img src="img/logo-pink.png" alt="Логотип Пинк"></a>
-        <a href=#><img src="img/logo-mishka.png" alt="Логотип Мишка"></a>
-      </section>
-    </main>
-<!--Футер-->
-      <footer class="main-footer">
-        <aside class="map-image">
-            <img src="img/map.png" alt="Район расположения офиса Нердс на карте">
-            <img src="img/map-marker.png" alt="Расположение офиса Нердс на карте">
-          <section class="contacts">
-            <h2 class="visually-hidden">Контакты</h2>
-            <p class="contacts-title">Nёrds Design Studio</p>
-            <p class="contacts-info">191186, Санкт-Петербург,<br />ул. Б. Конюшенная, д.19/8 </p>
-            <p class="contacts-info">тел. +7 (812) 275-75-75</p>
-            <a href="contact-form.html">Напишите нам</a>
-          </section>
-        </aside>
-        <div class="social-buttons">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <a href="https://vk.ru" class="social-btn vkontakte" aria-label="Вконтакте"></a>
-          <a href="https://facebook.com" class="social-btn facebook" aria-label="Фейсбук"></a>
-          <a href="https://instagram.com" class="social-btn instagram" aria-label="Инстаграм"></a>
+
+    <!--Логотипы-->
+    <section class="brands">
+      <h2 class="visually-hidden">Бренды</h2>
+      <div class="grid">
+        <div class="row">
+          <div class="column column-12">
+            <div class="brands-list">
+              <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-academy.png" alt="Логотип html академия"></a>
+              <a href=#><img src="img/logo-borodinski.png" alt="Логотип барбершопа"></a>
+              <a href=#><img src="img/logo-pink.png" alt="Логотип Пинк"></a>
+              <a href=#><img src="img/logo-mishka.png" alt="Логотип Мишка"></a>
+            </div>
+          </div>
         </div>
-        <div class="social-friends">
-          <p class="social-friends-title">Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </section>
+
+    <!-- Карта -->
+    <aside class="map">
+      <div class="grid height-100">
+        <div class="row height-100">
+          <div class="column column-12 height-100">
+            <section class="map-contacts">
+              <h2 class="visually-hidden">Контакты</h2>
+              <p class="map-contacts-title">Nёrds Design Studio</p>
+              <p class="map-contacts-info">191186, Санкт-Петербург,<br />ул. Б. Конюшенная, д.19/8 </p>
+              <p class="map-contacts-info">тел. +7 (812) 275-75-75</p>
+              <a href="contact-form.html">Напишите нам</a>
+            </section>
+
+            <img src="img/map-marker.png" class="map-marker" alt="Расположение офиса Нердс на карте">
+          </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </aside>
+
+    <!--Футер-->
+    <footer class="main-footer">
+      <div class="grid">
+        <div class="row">
+          <div class="column column-2">
+            <div class="social-buttons">
+              <h2 class="visually-hidden">Социальные сети</h2>
+              <a href="https://vk.ru" class="social-btn vkontakte" aria-label="Вконтакте"></a>
+              <a href="https://facebook.com" class="social-btn facebook" aria-label="Фейсбук"></a>
+              <a href="https://instagram.com" class="social-btn instagram" aria-label="Инстаграм"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="row">
+          <div class="column column-10">
+            <div class="social-friends">
+              <p class="social-friends-title">Давайте дружить, это выгодно!</p>
+              <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
