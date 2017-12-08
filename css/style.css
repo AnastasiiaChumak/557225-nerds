@@ -37,7 +37,6 @@ a{
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .width-50 {
@@ -97,9 +96,10 @@ a{
 }
 
 .site-navigation a {
+  position: relative;
   padding: 10px 0;
   color: #000000;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -115,6 +115,8 @@ a{
 
 .site-navigation a.active::after {
   content: "";
+  position: absolute;
+  bottom: 0;
   display: block;
   width: 100%;
   height: 2px;
@@ -262,7 +264,7 @@ a{
   padding: 15px 55px;
 
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 18px;
   color: #000;
   text-transform: uppercase;
@@ -479,22 +481,37 @@ a{
 
 .brands {
   margin: 0 0 80px 0;
-  padding: 40px 0;
+  padding: 40px 0 20px;
   border-bottom: 1px solid #eee;
 }
 
 .brands a {
-  opacity: 0.2;
+  position: relative;
   padding: 10px 30px;
   width: 100%;
 }
 
-.brands a:not(:last-child) {
-  border-right: 1px solid #eee;
+.brands a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20px;
+  display: block;
+  width: 1px;
+  height: 70px;
+  background-color: #eee;
 }
 
-.brands a:hover {
+.brands img {
+  opacity: 0.3;
+}
+
+.brands a:hover img {
   opacity: 0.7;
+}
+
+.brands a:active img {
+  opacity: 0.2;
 }
 
 .brands-list {
@@ -519,6 +536,7 @@ a{
 
 .catalog-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .catalog-wrapper legend{
@@ -785,7 +803,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .catalog-filter {
-  margin-right: 140px;
+  width: 260px;
 }
 
 .catalog-sort-by{
@@ -818,6 +836,7 @@ input[type="checkbox"]:disabled + label::before {
   text-transform: uppercase;
   color: #000000;
   opacity: 0.3;
+  font-weight: 400;
 }
 
 .catalog-sort-by a:last-child {
@@ -828,7 +847,8 @@ input[type="checkbox"]:disabled + label::before {
   opacity: 0.6;
 }
 .catalog-sort-by a:focus,
-.catalog-sort-by a:active{
+.catalog-sort-by a:active,
+.catalog-sort-by a.active {
   color: #000000;
   opacity: 1;
 }
@@ -850,7 +870,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .catalog {
-  width: 100%;
+  width: 760px;
 }
 
 .catalog-list {
@@ -860,14 +880,29 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .catalog-item {
+  position: relative;
   width: 360px;
   display: inline-block;
+  padding: 40px 0 0 0;
   margin: 0px 36px 26px 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
+}
+
+.catalog-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-image: url("../img/browser.svg");
+  background-size: contain;
+  opacity: .4;
 }
 
 .catalog-item:nth-child(2n) {
@@ -882,7 +917,7 @@ input[type="checkbox"]:disabled + label::before {
   display: block;
 }
 
-.catalog-item:hover .catalog-item-header {
+.catalog-item:hover::before {
   opacity: 1;
 }
 
@@ -903,25 +938,6 @@ input[type="checkbox"]:disabled + label::before {
   width: 100%;
 }
 
-.catalog-item-header {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 40px;
-  border-radius: 5px 5px 0 0;
-  opacity: .4;
-}
-
-.catalog-item-header::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/browser.svg");
-  background-size: contain;
-}
-
 .hidden-info {
   position: absolute;
   display: none;
@@ -930,6 +946,12 @@ input[type="checkbox"]:disabled + label::before {
   background: #eee;
   bottom: 0;
   text-align: center;
+}
+
+.hidden-info-heading:link,
+.hidden-info-heading:visited {
+  color: #000;
+  font-weight: 700;
 }
 
 /* Карта */
@@ -942,7 +964,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .map p {
-  margin: 20px 0;
+  margin: 21px 0;
 }
 
 .map-image {
@@ -952,21 +974,18 @@ input[type="checkbox"]:disabled + label::before {
 
 .map-marker {
   position: absolute;
-  top: 50%;
+  top: 185px;
+  right: 345px;
   transform: translateY(-50%);
-  right: 190px;
 }
 
 .map-contacts {
   position: absolute;
   top: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 30px 50px;
   transform: translateY(-50%);
-  width: 300px;
-  height: 320px;
+  width: 320px;
+  height: 310px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
@@ -974,8 +993,13 @@ input[type="checkbox"]:disabled + label::before {
   background-color: #ffffff;
 }
 
+.map-contacts .button {
+  margin-top: 15px;
+  padding: 15px 0;
+  width: 100%;
+}
+
 .map-contacts-title {
-  margin: 0 0 15px 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -987,11 +1011,15 @@ input[type="checkbox"]:disabled + label::before {
 
 .social {
   display: flex;
-  padding: 60px 0;
+  padding: 70px 0 50px;
+}
+
+.social-friends p {
+  margin: 8px 0;
 }
 
 .social-friends-title {
-  margin: 10px 0;
+  margin: 7px 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -999,7 +1027,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .social-buttons {
-  width: 30%;
+  width: 400px;
   display: flex;
 }
 
@@ -1024,6 +1052,88 @@ input[type="checkbox"]:disabled + label::before {
   box-shadow: 0 3px rgba(0, 0, 0, .1) inset;
 }
 
-.social-btn:active img {
+.social-btn:active svg {
   opacity: .4;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 960px;
+  height: 590px;
+  padding: 78px 100px;
+  background: #fff;
+  z-index: 100;
+}
+
+.modal h1 {
+  font-size: 45px;
+  margin: 0 0 58px 0;
+}
+
+.modal-input-list {
+  display: flex;
+  margin-bottom: 37px;
+}
+
+.modal-input-item {
+  width: 100%;
+}
+
+.modal-input-item:nth-child(2n) {
+  padding-left: 20px;
+}
+
+.modal label {
+  display: block;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+.modal input,
+.modal textarea {
+  opacity: .2;
+  border: 2px solid #000;
+  border-radius: 3px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+
+.modal input:hover,
+.modal textarea:hover {
+  opacity: .3;
+}
+
+.modal input:focus,
+.modal textarea:focus {
+  opacity: 1;
+}
+
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 100px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url('../img/close-cross.svg');
+  background-size: cover;
+  fill: #e74246;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  opacity: .4;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active,
+.modal-close:focus {
+  opacity: .2;
 }
