@@ -15,7 +15,7 @@
           <nav class="main-navigation">
             <!-- Лого -->
             <a href="index.html" class="main-header-logo" aria-label="Логотип вебстудии Нердс">
-              <img src="img/nerds-logo.svg" alt="Логотип вебстудии Нердс">
+              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип вебстудии Нердс">
             </a>
     
             <!-- Навигация -->
@@ -140,7 +140,7 @@
               <ul class="catalog-list">
                 <li class="catalog-item sedona">
                   <div class="catalog-item-content">
-                    <img src="img/img-sedona.jpg" class="catalog-image" alt="Превью макета Седона" />
+                    <img src="img/img-sedona.jpg" class="catalog-image" width="360" height="576" alt="Превью макета Седона" />
                     <div class="hidden-info">
                       <a href="#" class="hidden-info-heading" aria-label="Sedona">Sedona</a>
                       <p>Информационный сайт для туристов</p>
@@ -151,7 +151,7 @@
 
                 <li class="catalog-item pink">
                   <div class="catalog-item-content">
-                    <img src="img/img-pink.jpg" class="catalog-image" alt="Превью макета Пинк" />
+                    <img src="img/img-pink.jpg" class="catalog-image" width="360" height="576" alt="Превью макета Пинк" />
                     <div class="hidden-info">
                       <a href="#" class="hidden-info-heading" aria-label="Pink">Pink</a>
                       <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -162,7 +162,7 @@
                 
                 <li class="catalog-item borodinski">
                   <div class="catalog-item-content">
-                    <img src="img/img-barbershop.jpg" class="catalog-image" alt="Превью макета Барбершоп" />
+                    <img src="img/img-barbershop.jpg" class="catalog-image" width="360" height="576" alt="Превью макета Барбершоп" />
                     <div class="hidden-info">                      
                       <a href="#" class="hidden-info-heading" aria-label="Barbershop">Barbershop</a>
                       <p>Сайт салоны красоты. Для мужчин, да.</p>
@@ -173,7 +173,7 @@
                 
                 <li class="catalog-item monki">
                   <div class="catalog-item-content">
-                    <img src="img/img-mishka.jpg" class="catalog-image" alt="Превью макета Мишка" />
+                    <img src="img/img-mishka.jpg" class="catalog-image" width="360" height="576" alt="Превью макета Мишка" />
                     <div class="hidden-info">
                       <a href="#" class="hidden-info-heading" aria-label="Mishka">Mishka</a>
                       <p>Интернет-магазин вязаных игрушек</p>
@@ -184,7 +184,7 @@
                 
                 <li class="catalog-item aplus">
                   <div class="catalog-item-content">
-                    <img src="img/img-aplus.jpg" class="catalog-image" alt="Превью макета А+" />
+                    <img src="img/img-aplus.jpg" class="catalog-image" width="360" height="576" alt="Превью макета А+" />
                     <div class="hidden-info">
                       <a href="#" class="hidden-info-heading" aria-label="A Plus">А Plus</a>
                       <p>Лендинг курсов повышения квалификации</p>
@@ -195,7 +195,7 @@
                 
                 <li class="catalog-item kvast">
                   <div class="catalog-item-content">
-                    <img src="img/img-kvast.jpg" class="catalog-image" alt="Превью макета Кваст" />
+                    <img src="img/img-kvast.jpg" class="catalog-image" width="360" height="576" alt="Превью макета Кваст" />
                     <div class="hidden-info">
                       <a href="#" class="hidden-info-heading" aria-label="Кваст">Кваст</a>
                       <p>Промо-сайт производителя крафтового класса</p>
@@ -230,7 +230,7 @@
             <a class="red button" href="contact-form.html">Напишите нам</a>
           </section>
     
-          <img src="img/map-marker.png" class="map-marker" alt="Расположение офиса Нердс на карте">
+          <img src="img/map-marker.png" class="map-marker" alt="Расположение офиса Нердс на карте" width="231" height="190">
         </div>
       </aside>
 
@@ -266,19 +266,20 @@
         <div class="modal-input-list">
           <div class="modal-input-item">
             <label for="username">Ваше имя:</label>
-            <input type="text" id="username" placeholder="Представьтесь, пожалуйста">
+            <input type="text" id="username" name="username" placeholder="Представьтесь, пожалуйста">
           </div>
           <div class="modal-input-item">
             <label for="useremail">Ваш e-mail:</label>
-            <input type="text" id="useremail" placeholder="Для отправки ответа">
+            <input type="text" id="useremail" name="useremail" placeholder="Для отправки ответа">
           </div>
         </div>
         <div class="modal-input-list">
           <div class="modal-input-item">
             <label for="emailtext">Текст письма:</label>
-            <textarea id="emailtext" rows="6" placeholder="В свободной форме"></textarea>
+            <textarea id="emailtext" name="emailtext" rows="5" placeholder="В свободной форме"></textarea>
           </div>
         </div>
+        <button class="red button" type="submit">Отправить</button>
       </form>
     </section>
   </body>

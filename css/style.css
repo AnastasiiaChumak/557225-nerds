@@ -57,12 +57,10 @@ a{
 
 .main-header-logo {
   display: inline-block;
-  max-width: 160px;
 }
 
 .main-header-logo img {
   display: block;
-  width: 100%;
   opacity: 1;
 }
 
@@ -97,7 +95,7 @@ a{
 
 .site-navigation a {
   position: relative;
-  padding: 10px 0;
+  padding: 9px 0;
   color: #000000;
   font-weight: 500;
   text-transform: uppercase;
@@ -378,7 +376,6 @@ a{
 }
 
 .service-item img {
-  width: 100%;
   margin: 0 0 20px 0;
 }
 
@@ -389,8 +386,8 @@ a{
 /*Коротко о студии */
 .studio-about{
   display: flex;
-  padding: 30px 0 50px;
-  border-bottom: 1px solid #eee;
+  padding: 30px 0 48px;
+  border-bottom: 2px solid #eee;
 }
 
 .studio-principles h3{
@@ -481,24 +478,26 @@ a{
 
 .brands {
   margin: 0 0 80px 0;
-  padding: 40px 0 20px;
-  border-bottom: 1px solid #eee;
+  padding: 40px 0 34px;
+  border-bottom: 2px solid #eee;
 }
 
 .brands a {
   position: relative;
-  padding: 10px 30px;
-  width: 100%;
+  padding: 8px 30px;
+  width: 260px;
+  display: flex;
+  justify-content: center;
 }
 
 .brands a:not(:last-child)::after {
   content: "";
   position: absolute;
-  right: 0;
-  top: 20px;
+  right: -20px;
+  top: 15px;
   display: block;
-  width: 1px;
-  height: 70px;
+  width: 2px;
+  height: 55px;
   background-color: #eee;
 }
 
@@ -646,7 +645,7 @@ input[type="checkbox"] + label:hover::before {
 input[type="checkbox"]:not(:checked) + label::before {
   width: 23px;
   height: 23px;
-  margin-right: 10px;
+  margin-right: 13px;
   background-image: url("../img/checkbox-off.svg");
   background-size: 23px 23px;
 }
@@ -654,7 +653,7 @@ input[type="checkbox"]:not(:checked) + label::before {
 input[type="checkbox"]:checked + label::before {
   width: 25px;
   height: 25px;
-  margin-right: 8px;
+  margin-right: 11px;
   background-image: url("../img/checkbox-on.svg");
   background-size: 25px 25px;
 }
@@ -794,7 +793,7 @@ input[type="checkbox"]:disabled + label::before {
 .specialties,
 .net {
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .net legend,
@@ -825,11 +824,11 @@ input[type="checkbox"]:disabled + label::before {
 .catalog-sort-by-values {
   display: flex;
   justify-content: space-between;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 10px;
 }
 
 .catalog-sort-by a {
-  margin-right: 25px;
+  margin-right: 21px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
@@ -837,6 +836,10 @@ input[type="checkbox"]:disabled + label::before {
   color: #000000;
   opacity: 0.3;
   font-weight: 400;
+}
+
+.catalog-sort-by a.arrow {
+  margin-right: 14px;
 }
 
 .catalog-sort-by a:last-child {
@@ -935,7 +938,6 @@ input[type="checkbox"]:disabled + label::before {
 
 .catalog-image {
   display: block;
-  width: 100%;
 }
 
 .hidden-info {
@@ -1064,19 +1066,22 @@ input[type="checkbox"]:disabled + label::before {
   left: 50%;
   width: 960px;
   height: 590px;
-  padding: 78px 100px;
+  padding: 66px 98px;
   background: #fff;
   z-index: 100;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
 .modal h1 {
   font-size: 45px;
-  margin: 0 0 58px 0;
+  margin: 0 0 38px 0;
+  font-weight: 500;
+  line-height: 45px;
 }
 
 .modal-input-list {
   display: flex;
-  margin-bottom: 37px;
+  margin-bottom: 31px;
 }
 
 .modal-input-item {
@@ -1090,36 +1095,44 @@ input[type="checkbox"]:disabled + label::before {
 .modal label {
   display: block;
   font-weight: 600;
-  margin: 0 0 12px 0;
+  margin: 0 0 6px 0;
 }
 
 .modal input,
 .modal textarea {
-  opacity: .2;
-  border: 2px solid #000;
+  opacity: .6;
+  border: 2px solid rgba(0, 0, 0, .2);
   border-radius: 3px;
-  padding: 10px 15px;
+  padding: 14px 15px;
   width: 100%;
 }
 
 
 .modal input:hover,
 .modal textarea:hover {
-  opacity: .3;
+  border-color: rgba(0, 0, 0, .3);
+}
+
+.modal textarea {
+  resize: vertical;
+  height: 117px;
+  margin-bottom: 11px;
 }
 
 .modal input:focus,
 .modal textarea:focus {
   opacity: 1;
+  border: 2px solid rgba(0, 0, 0, 1);
 }
 
 .modal-close {
   position: absolute;
-  top: 78px;
-  right: 100px;
+  top: 77px;
+  right: 91px;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 21px;
+  height: 21px;
+  padding: 0;
   background-image: url('../img/close-cross.svg');
   background-size: cover;
   fill: #e74246;
@@ -1136,4 +1149,9 @@ input[type="checkbox"]:disabled + label::before {
 .modal-close:active,
 .modal-close:focus {
   opacity: .2;
+}
+
+.modal .button {
+  padding-left: 81px;
+  padding-right: 81px;
 }
