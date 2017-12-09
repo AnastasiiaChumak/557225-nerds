@@ -57,6 +57,7 @@ a{
 
 .main-header-logo {
   display: inline-block;
+  vertical-align: top;
 }
 
 .main-header-logo img {
@@ -159,6 +160,7 @@ a{
   position: relative;
 
   display: inline-block;
+  vertical-align: top;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -259,6 +261,7 @@ a{
 
 .button {
   display: inline-block;
+  vertical-align: top;
   padding: 15px 55px;
 
   font-size: 16px;
@@ -425,6 +428,7 @@ a{
   top: -0.3em;
   margin-right: 7px;
   display: inline-block;
+  vertical-align: middle;
   border-top: 2px solid #fb565a;
 }
 
@@ -488,16 +492,17 @@ a{
   width: 260px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .brands a:not(:last-child)::after {
   content: "";
   position: absolute;
   right: -20px;
-  top: 15px;
+  top: 25px;
   display: block;
   width: 2px;
-  height: 55px;
+  height: 52px;
   background-color: #eee;
 }
 
@@ -516,7 +521,7 @@ a{
 .brands-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 
 /*КАТАЛОГ*/
@@ -592,6 +597,7 @@ input[type="radio"] + label {
 input[type="radio"] + label::before {
   content: "";
   display: inline-block;
+  vertical-align: top;
   width: 25px;
   height: 25px;
   margin-right: 10px;
@@ -634,6 +640,7 @@ input[type="checkbox"] + label {
 input[type="checkbox"] + label::before {
   content: "";
   display: inline-block;
+  vertical-align: top;
   opacity: .6;
 }
 
@@ -760,6 +767,7 @@ input[type="checkbox"]:disabled + label::before {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 50%;
 
   font-size: 16px;
@@ -858,6 +866,7 @@ input[type="checkbox"]:disabled + label::before {
 
 .arrow {
   display: inline-block;
+  vertical-align: top;
   width: 11px;
   height: 10px;
 }
@@ -886,6 +895,7 @@ input[type="checkbox"]:disabled + label::before {
   position: relative;
   width: 360px;
   display: inline-block;
+  vertical-align: initial;
   padding: 40px 0 0 0;
   margin: 0px 36px 26px 0;
   font-size: 18px;
@@ -910,10 +920,6 @@ input[type="checkbox"]:disabled + label::before {
 
 .catalog-item:nth-child(2n) {
   margin-right: 0;
-}
-
-.catalog-item-content {
-  position: relative;
 }
 
 .catalog-item:hover .hidden-info {
@@ -944,7 +950,7 @@ input[type="checkbox"]:disabled + label::before {
   position: absolute;
   display: none;
   width: 100%;
-  padding: 20px;
+  padding: 44px 20px;
   background: #eee;
   bottom: 0;
   text-align: center;
