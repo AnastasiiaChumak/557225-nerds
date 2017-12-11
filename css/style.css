@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -402,7 +402,7 @@ a {
 }
 
 .studio-principles p {
-  margin: 35px 0;
+  margin: 35px 80px 35px 0;
 }
 .studio-principles .studio-services-label {
   margin: 37px 0 10px;
@@ -425,10 +425,10 @@ a {
   content: "";
   width: 25px;
   position: relative;
-  top: -0.3em;
-  margin-right: 7px;
+  top: 0;
+  margin-right: 10px;
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   border-top: 2px solid #fb565a;
 }
 
@@ -470,7 +470,8 @@ a {
 }
 
 .fact-item sup {
-  font-size: 23px;
+  top: -0.5em;
+  font-size: 27px;
   font-weight: 400;
 }
 
@@ -556,15 +557,15 @@ a {
 }
 
 .paginator a {
-  margin-right: 10px;
+  margin-right: 8px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .paginator .button.next {
   margin-right: 0;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 78px;
+  padding-right: 78px;
 }
 
 /* Стоимость */
@@ -658,11 +659,11 @@ input[type="checkbox"]:not(:checked) + label::before {
 }
 
 input[type="checkbox"]:checked + label::before {
-  width: 25px;
-  height: 25px;
-  margin-right: 11px;
+  width: 27px;
+  height: 27px;
+  margin-right: 9px;
   background-image: url("../img/checkbox-on.svg");
-  background-size: 25px 25px;
+  background-size: 27px 27px;
 }
 
 input[type="checkbox"]:disabled + label {
@@ -726,11 +727,10 @@ input[type="checkbox"]:disabled + label::before {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
-  left: 0;
+  top: 30px;
 
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   padding: 0;
 
   border: 8px solid #ffffff;
@@ -754,11 +754,11 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 16px;
 }
 
 .range-controls .toggle-max {
-  left: 120px;
+  left: 158px;
 }
 
 .price-controls {
@@ -806,7 +806,7 @@ input[type="checkbox"]:disabled + label::before {
 
 .net legend,
 .specialties legend {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .catalog-filter {
@@ -832,7 +832,7 @@ input[type="checkbox"]:disabled + label::before {
 .catalog-sort-by-values {
   display: flex;
   justify-content: space-between;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 18px;
 }
 
 .catalog-sort-by a {
@@ -847,7 +847,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .catalog-sort-by a.arrow {
-  margin-right: 14px;
+  margin-right: 20px;
 }
 
 .catalog-sort-by a:last-child {
@@ -886,18 +886,19 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 28px;
   padding: 0;
+  list-style: none;
   width: 100%;
 }
 
 .catalog-item {
   position: relative;
   width: 360px;
-  display: inline-block;
-  vertical-align: initial;
   padding: 40px 0 0 0;
-  margin: 0px 36px 26px 0;
+  margin: 0px 40px 33px 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -972,7 +973,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .map p {
-  margin: 21px 0;
+  margin: 22px 0;
 }
 
 .map-image {
@@ -1002,7 +1003,7 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .map-contacts .button {
-  margin-top: 15px;
+  margin-top: 12px;
   padding: 15px 0;
   width: 100%;
 }
